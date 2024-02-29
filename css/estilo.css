@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+body .contenedor {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.5fr 5fr 0.5fr;
+  grid-template-columns: 0.5fr 2fr 2fr;
+  grid-template-areas: "boton header header" "aside main main" "aside footer footer";
+}
+body .contenedor .hijo {
+  border: 1px solid #1c222e;
+}
+body .contenedor .exterior {
+  background-color: #0a0e16;
+}
+body .contenedor .header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .contenedor .header a {
+  margin: 5px;
+}
+body .contenedor .header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+body .contenedor .header .logo img {
+  width: 50px;
+}
+body .contenedor .main {
+  grid-area: main;
+}
+body .contenedor .aside {
+  grid-area: aside;
+}
+body .contenedor .footer {
+  grid-area: footer;
+}
+body .contenedor .boton {
+  grid-area: boton;
+}
+
+/*# sourceMappingURL=estilo.css.map */
