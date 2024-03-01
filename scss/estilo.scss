@@ -5,6 +5,8 @@
 }
 body{
     background-color: black;
+    color: #afafaf;
+
     .contenedor{
         height: 100vh;
         display: grid;
@@ -26,7 +28,8 @@ body{
             justify-content: space-between;
             align-items: center;
             a{
-                margin: 5px;
+                margin-left: 15px;
+                margin-right: 15px;
             }
             .logo{
                 display: flex;
@@ -35,6 +38,7 @@ body{
                 text-decoration: none;
                 img{
                     width: 50px;
+                    border-radius: 15px;
                 }
             }
         }
@@ -43,12 +47,44 @@ body{
         }
         .aside{
             grid-area: aside;
+            display: flex;
+            flex-direction: column;
+            .searchBarra{
+                div{
+                    form{
+                        input{
+                            background-color: #1c222e;
+                            color: #afafaf;
+                        }
+                    }
+                }
+            }
+            .navBarra{
+                ul{
+                    li{
+                        a{
+                            color: #afafaf;
+                        }
+                    }
+                    .desplegable{
+                        ul{
+                            a{
+                                background-color: #1c222e;
+                                color: #afafaf;
+                            }
+                        }
+                    }
+                }
+            }
         }
         .footer{
             grid-area: footer;
         }
         .boton{
             grid-area: boton;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

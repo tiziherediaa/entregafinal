@@ -6,6 +6,7 @@
 
 body {
   background-color: black;
+  color: #afafaf;
 }
 body .contenedor {
   height: 100vh;
@@ -27,7 +28,8 @@ body .contenedor .header {
   align-items: center;
 }
 body .contenedor .header a {
-  margin: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 body .contenedor .header .logo {
   display: flex;
@@ -37,18 +39,35 @@ body .contenedor .header .logo {
 }
 body .contenedor .header .logo img {
   width: 50px;
+  border-radius: 15px;
 }
 body .contenedor .main {
   grid-area: main;
 }
 body .contenedor .aside {
   grid-area: aside;
+  display: flex;
+  flex-direction: column;
+}
+body .contenedor .aside .searchBarra div form input {
+  background-color: #1c222e;
+  color: #afafaf;
+}
+body .contenedor .aside .navBarra ul li a {
+  color: #afafaf;
+}
+body .contenedor .aside .navBarra ul .desplegable ul a {
+  background-color: #1c222e;
+  color: #afafaf;
 }
 body .contenedor .footer {
   grid-area: footer;
 }
 body .contenedor .boton {
   grid-area: boton;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=estilo.css.map */
