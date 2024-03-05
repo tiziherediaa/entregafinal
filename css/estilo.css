@@ -69,5 +69,8 @@ body .contenedor .boton {
   justify-content: center;
   align-items: center;
 }
+body .contenedor .boton .botonGrupal {
+  margin: 10px;
+}
 
 /*# sourceMappingURL=estilo.css.map */
