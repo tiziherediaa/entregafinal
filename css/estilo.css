@@ -7,6 +7,7 @@
 body {
   background-color: black;
   color: #afafaf;
+  text-decoration: none;
 }
 body .contenedor {
   height: 100vh;
