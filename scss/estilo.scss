@@ -45,6 +45,27 @@ body{
         }
         .main{
             grid-area: main;
+            .tienda{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                div{
+                    background-color: #1c222e;
+                    color: #afafaf;
+                }
+            }
+            .spotiPlay{
+                display: flex;
+                justify-content: center;
+                width: 80%;
+                height: 400px;
+                margin: 0 auto;
+            }
+            .fotoGym{
+                width: 30%;
+                height: 200px;
+            }
         }
         .aside{
             grid-area: aside;
@@ -65,6 +86,9 @@ body{
                     li{
                         a{
                             color: #afafaf;
+                            &:hover{
+                                color: white;
+                            }
                         }
                     }
                     .desplegable{
@@ -72,6 +96,9 @@ body{
                             a{
                                 background-color: #1c222e;
                                 color: #afafaf;
+                                &:hover{
+                                    color: white;
+                                }
                             }
                         }
                     }

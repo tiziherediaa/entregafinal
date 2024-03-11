@@ -45,6 +45,27 @@ body .contenedor .header .logo img {
 body .contenedor .main {
   grid-area: main;
 }
+body .contenedor .main .tienda {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+body .contenedor .main .tienda div {
+  background-color: #1c222e;
+  color: #afafaf;
+}
+body .contenedor .main .spotiPlay {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+}
+body .contenedor .main .fotoGym {
+  width: 30%;
+  height: 200px;
+}
 body .contenedor .aside {
   grid-area: aside;
   display: flex;
@@ -57,9 +78,15 @@ body .contenedor .aside .searchBarra div form input {
 body .contenedor .aside .navBarra ul li a {
   color: #afafaf;
 }
+body .contenedor .aside .navBarra ul li a:hover {
+  color: white;
+}
 body .contenedor .aside .navBarra ul .desplegable ul a {
   background-color: #1c222e;
   color: #afafaf;
+}
+body .contenedor .aside .navBarra ul .desplegable ul a:hover {
+  color: white;
 }
 body .contenedor .footer {
   grid-area: footer;
