@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <!--METAS-->
 
     <meta charset="UTF-8">
@@ -49,12 +50,54 @@
 
         <!------Botones esquina------>
 
-        <section class="hijo boton exterior">
+        <section class="hijo boton exterior mobileExt">
             <div class="btn-group botonGrupal">
-                <a href="#" class="btn btn-primary">Usuario</a>
-                <a href="./pages/admin.html" class="btn btn-primary">Administrador</a>
+                <a href="#" class="btn btn-primary botones">Usuario</a>
+                <a href="./pages/admin.html" class="btn btn-primary botones">Administrador</a>
               </div>
         </section>
+
+        <aside class="hijo aside exterior mobileExt">
+
+          <!------Barra de busqueda------>
+
+          <nav class="navbar searchBarra mt-3 ms-2 searchBarra">
+              <div class="container-fluid">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+              </div>
+          </nav>
+          <hr>
+
+          <!------Menu aside------>
+
+          <nav class="navbar navBarra mobileEXT">
+            <ul class="navbar-nav me-auto mb-5 mx-4">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/quienessomos.html">¿Quienes somos?</a>
+              </li>
+              <li class="nav-item dropdown desplegable">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tipos de ejercicios
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item" href="./pages/tsuperior.html">Tren superior</a></li>
+                  <li><a class="dropdown-item" href="./pages/tinferior.html">Tren inferior</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Ejer. de calentamiento</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Proximamente</a>
+              </li>
+            </ul>
+    </nav>
+
+      </aside>
 
         <!------Main------>
 
@@ -106,46 +149,6 @@
           <iframe class="spotiPlay animate__animated animate__heartBeat" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1wZWIJPrlLdwS7rjRvGnk2?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
         </main>
-        <aside class="hijo aside exterior">
-
-            <!------Barra de busqueda------>
-
-            <nav class="navbar searchBarra mt-3 ms-2 searchBarra">
-                <div class="container-fluid">
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  </form>
-                </div>
-            </nav>
-            <hr>
-
-            <!------Menu aside------>
-
-            <nav class="navbar navBarra">
-                    <ul class="navbar-nav me-auto mb-5 mx-4">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./pages/quienessomos.html">¿Quienes somos?</a>
-                      </li>
-                      <li class="nav-item dropdown desplegable">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Tipos de ejercicios
-                        </a>
-                        <ul class="dropdown-menu bg-dark">
-                          <li><a class="dropdown-item" href="./pages/tsuperior.html">Tren superior</a></li>
-                          <li><a class="dropdown-item" href="./pages/tinferior.html">Tren inferior</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Ejer. de calentamiento</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Proximamente</a>
-                      </li>
-                    </ul>
-              </nav>
-        </aside>
         <footer class="hijo footer exterior">
             3
         </footer>
@@ -158,5 +161,6 @@
     <!-----------LINKEO AOS-------------->
 
     <script>AOS.init();</script>
+
 </body>
 </html>

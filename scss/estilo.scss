@@ -81,10 +81,17 @@ body{
                     }
                 }
             }
+            }
             .navBarra{
                 ul{
                     li{
                         a{
+                            color: #afafaf;
+                            &:hover{
+                                color: white;
+                            }
+                        }
+                        inicioNahe{
                             color: #afafaf;
                             &:hover{
                                 color: white;
@@ -118,4 +125,30 @@ body{
             }
         }
     }
+/*Media query para vista tablets*/
+@media (max-width: 1189px){
+    .contenedor{
+        height: 100vh;
+        main{
+            .tienda{
+                div{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
 }
+@media (max-width: 425){
+    .contenedor{
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "boton boton boton"
+        "aside aside aside"
+        "main main main"
+        "main main main";
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        }
+    }

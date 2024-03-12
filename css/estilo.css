@@ -75,30 +75,54 @@ body .contenedor .aside .searchBarra div form input {
   background-color: #1c222e;
   color: #afafaf;
 }
-body .contenedor .aside .navBarra ul li a {
+body .contenedor .navBarra ul li a {
   color: #afafaf;
 }
-body .contenedor .aside .navBarra ul li a:hover {
+body .contenedor .navBarra ul li a:hover {
   color: white;
 }
-body .contenedor .aside .navBarra ul .desplegable ul a {
+body .contenedor .navBarra ul li inicioNahe {
+  color: #afafaf;
+}
+body .contenedor .navBarra ul li inicioNahe:hover {
+  color: white;
+}
+body .contenedor .navBarra ul .desplegable ul a {
   background-color: #1c222e;
   color: #afafaf;
 }
-body .contenedor .aside .navBarra ul .desplegable ul a:hover {
+body .contenedor .navBarra ul .desplegable ul a:hover {
   color: white;
 }
-body .contenedor .footer {
+body .footer {
   grid-area: footer;
 }
-body .contenedor .boton {
+body .boton {
   grid-area: boton;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body .contenedor .boton .botonGrupal {
+body .boton .botonGrupal {
   margin: 10px;
+}
+
+/*Media query para vista tablets*/
+@media (max-width: 1189px) {
+  .contenedor {
+    height: 100vh;
+  }
+  .contenedor main .tienda div {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 425) {
+  .contenedor {
+    display: grid;
+    grid-template-areas: "header header header" "boton boton boton" "aside aside aside" "main main main" "main main main";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */
