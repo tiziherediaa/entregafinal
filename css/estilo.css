@@ -15,6 +15,7 @@ body .contenedor {
   grid-template-rows: 0.5fr 5fr 0.5fr;
   grid-template-columns: 0.5fr 2fr 2fr;
   grid-template-areas: "boton header header" "aside main main" "aside footer footer";
+  overflow: hidden;
 }
 body .contenedor .hijo {
   border: 1px solid #1c222e;
@@ -31,6 +32,9 @@ body .contenedor .header {
 body .contenedor .header a {
   margin-left: 15px;
   margin-right: 15px;
+}
+body .contenedor .header a h1 {
+  color: #d4d4d4;
 }
 body .contenedor .header .logo {
   display: flex;
@@ -116,12 +120,47 @@ body .boton .botonGrupal {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 425) {
+/*Media query para vista mobile*/
+@media (max-width: 576px) {
   .contenedor {
-    display: grid;
-    grid-template-areas: "header header header" "boton boton boton" "aside aside aside" "main main main" "main main main";
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr !important;
+    grid-template-rows: 1fr !important;
+    grid-template-areas: "header" "boton" "aside" "main" "footer" !important;
+    width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+  .contenedor .header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+  .contenedor .aside {
+    grid-area: aside;
+    display: flex !important;
+  }
+  .contenedor .aside .searchBarra div {
+    width: 100vw !important;
+    justify-content: center;
+  }
+  .contenedor .aside .navBarra ul {
+    width: 100vw;
+  }
+  .contenedor .aside .navBarra ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor .boton {
+    grid-area: boton;
+  }
+  .contenedor .main {
+    grid-area: main;
+    width: 100vw;
+  }
+  .contenedor .footer {
+    grid-area: footer;
   }
 }
 
