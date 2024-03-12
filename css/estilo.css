@@ -145,7 +145,7 @@ body .boton .botonGrupal {
     justify-content: center;
   }
   .contenedor .aside .navBarra ul {
-    width: 100vw;
+    width: 90vw;
   }
   .contenedor .aside .navBarra ul li a {
     display: flex;
