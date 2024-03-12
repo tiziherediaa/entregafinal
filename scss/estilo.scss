@@ -17,7 +17,6 @@ body{
         "boton header header"
         "aside main main"
         "aside footer footer" ;
-        overflow: hidden;
         .hijo{
             border: 1px solid #1c222e;
         }
@@ -80,25 +79,19 @@ body{
                     form{
                         input{
                             background-color: #1c222e;
-                            color: #afafaf;
+                            color: #afafaf !important;
                         }
                     }
                 }
             }
             }
-            .navBarra{
+            nav{
                 ul{
                     li{
                         a{
-                            color: #afafaf;
+                            color: #afafaf !important;
                             &:hover{
-                                color: white;
-                            }
-                        }
-                        inicioNahe{
-                            color: #afafaf;
-                            &:hover{
-                                color: white;
+                                color: white !important;
                             }
                         }
                     }
@@ -106,7 +99,7 @@ body{
                         ul{
                             a{
                                 background-color: #1c222e;
-                                color: #afafaf;
+                                color: #afafaf !important;
                                 &:hover{
                                     color: white;
                                 }

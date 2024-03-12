@@ -15,7 +15,6 @@ body .contenedor {
   grid-template-rows: 0.5fr 5fr 0.5fr;
   grid-template-columns: 0.5fr 2fr 2fr;
   grid-template-areas: "boton header header" "aside main main" "aside footer footer";
-  overflow: hidden;
 }
 body .contenedor .hijo {
   border: 1px solid #1c222e;
@@ -77,25 +76,19 @@ body .contenedor .aside {
 }
 body .contenedor .aside .searchBarra div form input {
   background-color: #1c222e;
-  color: #afafaf;
+  color: #afafaf !important;
 }
-body .contenedor .navBarra ul li a {
-  color: #afafaf;
+body .contenedor nav ul li a {
+  color: #afafaf !important;
 }
-body .contenedor .navBarra ul li a:hover {
-  color: white;
+body .contenedor nav ul li a:hover {
+  color: white !important;
 }
-body .contenedor .navBarra ul li inicioNahe {
-  color: #afafaf;
-}
-body .contenedor .navBarra ul li inicioNahe:hover {
-  color: white;
-}
-body .contenedor .navBarra ul .desplegable ul a {
+body .contenedor nav ul .desplegable ul a {
   background-color: #1c222e;
-  color: #afafaf;
+  color: #afafaf !important;
 }
-body .contenedor .navBarra ul .desplegable ul a:hover {
+body .contenedor nav ul .desplegable ul a:hover {
   color: white;
 }
 body .footer {
