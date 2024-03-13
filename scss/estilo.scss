@@ -69,6 +69,13 @@ body{
                 width: 30%;
                 height: 200px;
             }
+            div{
+                ul{
+                    li{
+                        text-decoration: none;
+                    }
+                }
+            }
         }
         .aside{
             grid-area: aside;
@@ -132,6 +139,13 @@ body{
                     margin-bottom: 20px;
                 }
             }
+            div{
+                ul{
+                    iframe{
+                        width: 90%;
+                    }
+                }
+            }
         }
     }
 
@@ -184,6 +198,13 @@ body{
         .main{
             grid-area: main;
             width: 100vw;
+            div{
+                ul{
+                    iframe{
+                        width: 90%;
+                    }
+                }
+            }
         }
         .footer{
             grid-area: footer;

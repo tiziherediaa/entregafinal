@@ -69,6 +69,9 @@ body .contenedor .main .fotoGym {
   width: 30%;
   height: 200px;
 }
+body .contenedor .main div ul li {
+  text-decoration: none;
+}
 body .contenedor .aside {
   grid-area: aside;
   display: flex;
@@ -112,6 +115,9 @@ body .boton .botonGrupal {
   .contenedor main .tienda div {
     margin-bottom: 20px;
   }
+  .contenedor main div ul iframe {
+    width: 90%;
+  }
 }
 /*Media query para vista mobile*/
 @media (max-width: 576px) {
@@ -151,6 +157,9 @@ body .boton .botonGrupal {
   .contenedor .main {
     grid-area: main;
     width: 100vw;
+  }
+  .contenedor .main div ul iframe {
+    width: 90%;
   }
   .contenedor .footer {
     grid-area: footer;
